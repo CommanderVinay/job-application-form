@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 600px;
+            width: 500px;
+            border-radius: 10px;
+            padding:10px;
+            font: 20px;
+
+        }
+        input[type=text]{
+            background: red;
+            color: #FFF;
+            border-radius: 5px;
+            border: none;
+            padding: 0 5px;
+            font: 20px;
+        }
+        input[type=number]{
+           
+            border: none;
+            width: 300px;
+            transition: all 5s;
+        }
+        input[type=number]:focus{
+           
+          outline: none;
+          width: 600px;
+          
+       }
+        input{
+            display: block;
+            margin: 10px ;
+        }
+        label{
+            display: flex;
+            float: left;
+            margin: 0 10px;
+           
+        }
+        input [hidden]{
+            float: none;
+        }
+        select{
+            background: red;
+            color: #FFF;
+        }
+        section:hover{
+            background-color: white !important ;
+            color: red;
+        }
+        textarea{
+            width:300px ;
+            height:50 ;
+            resize: none;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" name="name"  placeholder="Enter name " required/>
+        <label for="">Date  of birth</label>
+        <input type="date" name="DOB"  placeholder="Enter your date of birth" required/>
+        <label for="">time</label>
+        <input type="time" name=""  required/>
+        <label for="">mobile</label>
+        <input type="number" name=""  placeholder="Enter your mobile no. " required/>
+        <label for="">E-mail</label>
+        <input type="email" name=""  placeholder="Enter your E-mail " required/>
+        <label for="">Password</label>
+        <input type="password" name=""  placeholder="Enter your password " required/>
+        <label for="">Resume</label>
+        <input type="file" name="" accept=".jpg" placeholder="import your resume " required/>
+        <label for="">color</label>
+        <input type="color" name="color"  placeholder="Enter  " required/>
+        <label for="">range</label>
+        <input type="range" name="color" min="10" max="200" placeholder="Enter  " required/>
+        <label for="">date time</label>
+        <input type="datetime-local" name="color"  required/>
+        <label for="">Hidden</label>
+        <input type="hidden" name="color"  placeholder="Enter  " required/>
+        <div>
+        <input type="radio" name="gender" value="m" checked>Male
+        <input type="radio" name="gender" value="m">Female
+         </div>
+         <div>
+            <input type="checkbox" name="pan" value="yes">PAN
+            <input type="checkbox" name="aadhar" value="yes">AADHAR
+         </div>
+         <label for="">Job Role</label>
+         <select name="" id="">
+            <option value="">Select</option>
+             <option value="Frontend Devloper">Frontend Devloper</option>
+             <option value="Backend Devloper">Backend Devloper</option>
+             <option value="Full Stack Devloper">Full Stack Devloper</option>
+             <option value=" UI UX designer">UI UX designer</option>
+         </select>
+         <label for="">state</label>
+         <select name="" id="">
+            <option value="">Select</option>
+             <option value="jh">jharkhand</option>
+             <option value="Br">bihar</option>
+             <option value="dl">delhi</option>
+             <option value=" Up">up</option>
+         </select>
+         <div>
+         <label for="">textarea</label>
+         <textarea name="" id=""></textarea>
+         </div>
+         <div>
+            <input type="submit" value="register">
+            <input type="reset" value="clear">
+         </div>
+        
+
+    </form>
+</div>
+    
+</body>
+</html>
